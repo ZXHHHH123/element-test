@@ -1,4 +1,4 @@
-这几天通过学习element-ui，结合vue-router，以及单页面思想（组件化）做出的一个小demo 也想再次熟悉一下github命令行操作，过几天把更完善的代码（结合vuex以及axios实现更加完整的后台关系系统）
+新闻版块大致功能已经实现，将代码实现了部分优化，总的使用了vue-router、axios以及一些vue的基本思想以及知识，还结合了elementUI框架，对整个页面进行了设计
 
 
 # element-test
