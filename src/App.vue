@@ -10,7 +10,7 @@
         </el-submenu>
         <!--<el-menu-item index="3"><a href="javascript：" target="_blank">订单管理</a></el-menu-item>-->
         <!--<el-menu-item style="float: right"><i class="el-icon-circle-cross" style="font-size: 2em"></i></el-menu-item>-->
-        <el-menu-item style="float: right" index="3"><el-tooltip class="item" content="注销" placement="bottom" effect="light"><el-button type="text">Admin</el-button>  </el-tooltip>
+        <el-menu-item style="float: right" index="3"><el-tooltip class="item" content="注销" placement="bottom" effect="light"><el-button type="text" v-on:click.native="handleOut">Admin</el-button>  </el-tooltip>
         </el-menu-item>
       </el-menu>
       <div class="line"></div>
@@ -72,6 +72,9 @@
           message: 'We have laid the groundwork for you. Now it\'s your time to build something epic!',
           duration: 3000
         })
+      },
+      handleOut : function () {
+          this.$router.push('/')
       },
       handleOpen(key, keyPath) {
         console.log(key, keyPath);

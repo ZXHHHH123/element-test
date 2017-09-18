@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
+import Login from '@/components/login'
 import Test1 from '@/components/test1'
 import Test2 from '@/components/test2'
 import Address from '@/components/address'
@@ -14,8 +15,8 @@ export default new Router({
   routes: [
     {
       path:'/',
-      name:'Test1',
-      component:Test1
+      name:'Login',
+      component:Login
     },
     {
       path:'/test1',

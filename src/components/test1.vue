@@ -54,7 +54,7 @@
   import ElCol from "element-ui/packages/col/src/col";
   import ElRow from "element-ui/packages/row/src/row";
   import myPage from "../components/page.vue";
-  import axios from  'axios'
+    import axios from  'axios'
   import Qs from 'qs'
   import $ from 'jquery'
 
@@ -206,4 +206,30 @@
       handleCurrentChange(val) {console.log(`当前页: ${val}`);},
     },
   }
+  var Mock=require("mockjs")//引入已经装好的Mockjs包，位置在node_modules/mockjs
+  Mock.mock('http://zchuhyy',{
+    "users": [
+    {
+      "id" : 1,
+      "account": "aaa",
+      "password": "aaa"
+    },
+    {
+      "id" : 2,
+      "account": "bbb",
+      "password": "bbb"
+    },
+    {
+      "id": 3,
+      "account": "ccc",
+      "password": "ccc"
+    }
+  ]
+  });
+  //使用mock语法，对其进行命名链接，并开始对属性进行命名，声明属性规则，以及属性值定义
+  axios.get('http://zchuhyy').then(response=>{
+    console.log(response.data);//通过axios实现Ajax的数据传输，同时将数据输出到控制台，从而得到了数据
+  }).catch(error=>{
+    alert(123);
+  })
 </script>

@@ -1,4 +1,4 @@
-新闻版块大致功能已经实现，将代码实现了部分优化，总的使用了vue-router、axios以及一些vue的基本思想以及知识，还结合了elementUI框架，对整个页面进行了设计
+新闻版块大致功能已经实现，将代码实现了部分优化，总的使用了vue-router、axios以及一些vue的基本思想以及知识，还结合了elementUI框架，对整个页面进行了设计fhadkjfdsjkfjskajfldfjdf
 
 
 # element-test
